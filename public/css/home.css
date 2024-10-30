@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.notFound{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.notFound h1{
+  font-size: 60px;
+  color: rgb(164, 22, 22);
+}
+.notFound a{
+  text-decoration: none;
+  border: 1px solid  rgb(216, 165, 53);
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.main_div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(151, 222, 44);
+  padding: 20px 0px;
+}
+main{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add{
+  width: 1000px;
+}
+.add-todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-todo form{
+  width: 100%;
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+}
+.add-todo textarea{
+  resize: vertical;
+  min-height: 30px;
+  margin-top: 30px;
+  border: 1px solid lightgray;
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3ms;
+  margin-bottom: 30px;
+}
+
+.add-todo textarea:focus{
+  border: 1px solid lightblue;
+  box-shadow: 0 0 5px lightblue;
+}
+
+.add-todo button{
+  border: 1px solid lightgray;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  background-color: lightgreen;
+  transition: all 0.3ms;
+  cursor: pointer;
+}
+
+.add-todo button:hover{
+  border: 1px solid lightgray;
+  background-color: rgb(91, 252, 91);
+}
+
+.data{
+  width: 1000px;
+  margin-top: 50px;
+  border-top: 1px solid lightgray;
+  height: 20px;
+  padding-top: 20px;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.delete_btn{
+  font-size: 20px;
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}

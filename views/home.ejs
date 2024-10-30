@@ -1,0 +1,32 @@
+<%-  include('includes/head.ejs') %>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <div class="main_div">
+    <header>
+      <h1>TO-DO Express</h1>
+    </header>
+  </div>
+  <main >
+    <div class="add">
+      <div class="add-todo">
+        <h2>Add To-Do</h2>
+        <form action="/" method="POST">
+          <textarea name="note" id="note"></textarea>
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+    <div class="data">
+      <% for (let i = 0; i < db.length; i++) { %>
+        <div class="list">
+          <p><%= db[i].note %></p>
+          <form action="/delete/<%= i %>" method="POST" onsubmit="return confirm('Are you sure you want to delete this note?')">
+            <button class="delete_btn" type="submit">X</button>
+          </form>
+        </div>
+      <% } %>
+    </div>
+  </main>
+</body>
+</html>
